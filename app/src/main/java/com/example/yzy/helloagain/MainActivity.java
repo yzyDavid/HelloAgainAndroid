@@ -6,8 +6,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-import com.example.yzy.helloagain.Utils;
-
 public class MainActivity extends AppCompatActivity {
 
     @Override
