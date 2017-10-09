@@ -2,4 +2,8 @@
     <string name="app_name">HelloAgain</string>
     <string name="edit_message">Enter a message</string>
     <string name="send_message">Send a message</string>
+    <string name="input_name">Enter a name</string>
+    <string name="input_id">Enter an id</string>
+    <string name="input_optional">Enter an optional message</string>
+    <string name="but_try_json">Try it!</string>
 </resources>

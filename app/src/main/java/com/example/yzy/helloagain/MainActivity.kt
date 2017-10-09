@@ -8,15 +8,18 @@ import org.jetbrains.anko.toast
 
 class MainActivity : AppCompatActivity() {
 
-    val LOG_INFO_TAG = "Quick Log"
+    private val LOG_INFO_TAG = "Quick Log"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        ControllerA.activity = this
+
         button_send.setOnClickListener {
             val text = edit_message.text.toString()
             Utils.toast(this@MainActivity, text)
+            ControllerA.test()
         }
     }
 

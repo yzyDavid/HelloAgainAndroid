@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.example.yzy.helloagain.MainActivity">
 
     <TextView
@@ -17,15 +18,41 @@
 
     <EditText
         android:id="@+id/edit_message"
-        android:layout_weight="1"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="@string/edit_message" />
 
     <Button
         android:id="@+id/button_send"
+        android:textColor="@color/colorPrimary"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/send_message" />
+
+    <EditText
+        android:id="@+id/edit_name"
+        android:hint="@string/input_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/edit_id"
+        android:hint="@string/input_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/edit_opt"
+        android:hint="@string/input_optional"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/button_try"
+        android:text="@string/but_try_json"
+        android:textColor="@color/colorAccent"
+        android:shadowColor="@color/colorAccent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
 </LinearLayout>
