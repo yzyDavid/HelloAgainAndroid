@@ -9,6 +9,7 @@ import android.widget.Toast
 import okhttp3.OkHttpClient
 import okhttp3.Request
 import java.io.IOException
+import org.jetbrains.anko.toast as ankoToast
 
 object Utils {
     @JvmStatic
