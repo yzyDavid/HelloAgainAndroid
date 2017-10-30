@@ -18,7 +18,8 @@ object ControllerA {
         activity.toast(res)
     }
 
-    fun modelToGson(model: DataModelA) {
-
+    fun modelToGson(model: DataModelA): String {
+        val gson = GsonBuilder().create()
+        return gson.toJson(model) ?: ""
     }
 }

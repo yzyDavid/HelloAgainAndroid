@@ -21,9 +21,18 @@ class MainActivity : AppCompatActivity() {
             Utils.toast(this@MainActivity, text)
             ControllerA.test()
         }
+
+        button_try.setOnClickListener {
+            ControllerA.modelToGson(DataModelA(
+                    edit_name.text.toString(),
+                    Integer.parseInt(edit_id.text.toString()),
+                    edit_opt.text.toString())).let {
+                toastAndLog(it)
+            }
+        }
     }
 
-    fun toastAndLog(message: String) {
+    private fun toastAndLog(message: String) {
         toast(message)
         Log.i(LOG_INFO_TAG, message)
     }
