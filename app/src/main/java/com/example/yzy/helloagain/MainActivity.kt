@@ -1,9 +1,11 @@
 package com.example.yzy.helloagain
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import kotlinx.android.synthetic.main.activity_main.*
+import org.jetbrains.anko.calendarView
 import org.jetbrains.anko.toast
 
 class MainActivity : AppCompatActivity() {
@@ -34,6 +36,11 @@ class MainActivity : AppCompatActivity() {
                     edit_opt.text.toString())).let {
                 toastAndLog(it)
             }
+        }
+
+        button_intent.setOnClickListener {
+            val intent = Intent(this, ScrollingActivity::class.java)
+            startActivity(intent)
         }
     }
 
