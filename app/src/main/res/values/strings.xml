@@ -6,4 +6,5 @@
     <string name="input_id">Enter an id</string>
     <string name="input_optional">Enter an optional message</string>
     <string name="but_try_json">Try it!</string>
+    <string name="but_intent">Goto new intent</string>
 </resources>

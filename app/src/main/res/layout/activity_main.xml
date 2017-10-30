@@ -24,35 +24,43 @@
 
     <Button
         android:id="@+id/button_send"
-        android:textColor="@color/colorPrimary"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/send_message" />
+        android:text="@string/send_message"
+        android:textColor="@color/colorPrimary" />
 
     <EditText
         android:id="@+id/edit_name"
-        android:hint="@string/input_name"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:hint="@string/input_name" />
 
     <EditText
         android:id="@+id/edit_id"
-        android:hint="@string/input_id"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:hint="@string/input_id" />
 
     <EditText
         android:id="@+id/edit_opt"
-        android:hint="@string/input_optional"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:hint="@string/input_optional" />
 
     <Button
         android:id="@+id/button_try"
-        android:text="@string/but_try_json"
-        android:textColor="@color/colorAccent"
-        android:shadowColor="@color/colorAccent"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:shadowColor="@color/colorAccent"
+        android:text="@string/but_try_json"
+        android:textColor="@color/colorAccent" />
+
+    <Button
+        android:id="@+id/button_intent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:shadowColor="@color/colorPrimaryDark"
+        android:text="@string/but_intent" />
+
 
 </LinearLayout>

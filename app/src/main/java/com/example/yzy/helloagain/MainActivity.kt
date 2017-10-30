@@ -23,9 +23,14 @@ class MainActivity : AppCompatActivity() {
         }
 
         button_try.setOnClickListener {
+            var id = 0
+            try {
+                id = Integer.parseInt(edit_id.text.toString())
+            } catch (e: NumberFormatException) {
+            }
             ControllerA.modelToGson(DataModelA(
                     edit_name.text.toString(),
-                    Integer.parseInt(edit_id.text.toString()),
+                    id,
                     edit_opt.text.toString())).let {
                 toastAndLog(it)
             }
